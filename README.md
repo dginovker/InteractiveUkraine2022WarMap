@@ -5,7 +5,7 @@ This web page displays a timeline showcasing the territorial ownership changes d
 
 ## Data Source
 
-The territorial ownership data used in this timeline is sourced from Wikipedia Commons. The data is derived from the SVG file available at [2022_Russian_invasion_of_Ukraine.svg](https://commons.wikimedia.org/wiki/File:2022_Russian_invasion_of_Ukraine.svg).
+The territorial ownership data used in this timeline is sourced from Wikipedia Commons. The data is derived from work at [Wikipedia Commons(https://commons.wikimedia.org/wiki/File:2022_Russian_Invasion_of_Ukraine_animated.gif).
 
 Please note that the data visualization and interactivity in this web page are for illustrative purposes and may not reflect real-time or up-to-date information. For accurate and detailed information, refer to the original data source.
 

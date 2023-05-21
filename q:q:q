@@ -1,0 +1,39 @@
+[1mdiff --git a/index.html b/index.html[m
+[1mindex 54f094b..9802f5e 100644[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@ -8,17 +8,6 @@[m
+   <meta name="keywords" content="2022 Russian invasion of Ukraine, territorial ownership, timeline, war, interactive map">[m
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">[m
+   <link rel="stylesheet" href="styles.css">[m
+[31m-  <style>[m
+[31m-    #gif {[m
+[31m-      display: none;[m
+[31m-    }[m
+[31m-[m
+[31m-    #loading-message {[m
+[31m-      text-align: center;[m
+[31m-      font-size: 18px;[m
+[31m-      margin-top: 30px;[m
+[31m-    }[m
+[31m-  </style>[m
+ </head>[m
+ <body>[m
+   <header>[m
+[36m@@ -43,6 +32,16 @@[m
+     </div>[m
+   </main>[m
+ [m
+[32m+[m[32m  <footer>[m
+[32m+[m[32m    <div class="container">[m
+[32m+[m[32m      <div class="row">[m
+[32m+[m[32m        <div class="col">[m
+[32m+[m[32m          <p>Source: <a href="https://commons.wikimedia.org/wiki/File:2022_Russian_Invasion_of_Ukraine_animated.gif">commons.wikimedia.org</a></p>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m  </footer>[m
+[32m+[m
+   <script src="script.js"></script>[m
+ </body>[m
+ </html>[m
