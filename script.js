@@ -9,7 +9,6 @@ let isDragging = false;
 
 function initializeTimeline() {
   videoDuration = gif.duration;
-  console.log(videoDuration)
 
   timeline.addEventListener('mousedown', (event) => {
     isDragging = true;
@@ -25,6 +24,9 @@ function initializeTimeline() {
   document.addEventListener('mouseup', () => {
     isDragging = false;
   });
+
+  gif.style.display = 'block'; // Show the video once it's loaded
+  document.getElementById('loading-message').style.display = 'none'; // Hide the loading message
 }
 
 gif.addEventListener('canplaythrough', initializeTimeline);
@@ -37,3 +39,12 @@ function updateTimeline(event) {
   gif.currentTime = currentTime;
   progress.style.width = `${percentage}%`;
 }
+
+// If the interactive visualization doesn't appear, try refreshing the page
+setTimeout(() => {
+  const loadingMessage = document.getElementById('loading-message');
+  const gifDisplayStyle = window.getComputedStyle(gif).getPropertyValue('display');
+  if (gifDisplayStyle !== 'block') {
+    loadingMessage.innerHTML += '<br />(If the interactive visualization does not appear after a while, please try refreshing the page)';
+  }
+}, 5000);
