@@ -34,7 +34,11 @@ gif.addEventListener('loadedmetadata', initializeTimeline);
 
 function updateTimeline(event) {
   const offsetX = event.clientX - timeline.getBoundingClientRect().left;
-  const percentage = (offsetX / timeline.offsetWidth) * 100;
+  let percentage = (offsetX / timeline.offsetWidth) * 100;
+
+  // Ensure the percentage stays within the valid range of 0 to 100
+  percentage = Math.max(0, Math.min(percentage, 100));
+
   const currentTime = (percentage / 100) * videoDuration;
   gif.currentTime = currentTime;
   progress.style.width = `${percentage}%`;
